@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>John King</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --blue: #4a7c9b;
+      --blue-light: #6b9cbb;
+      --text: #1a1a1a;
+      --text-muted: #666;
+      --bg: #fafafa;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 400px;
+      text-align: center;
+    }
+
+    .avatar {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 4px 20px rgba(74, 124, 155, 0.2);
+    }
+
+    h1 {
+      font-size: 1.5rem;
+      font-weight: 500;
+      margin-bottom: 0.75rem;
+      letter-spacing: -0.02em;
+    }
+
+    .bio {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      margin-bottom: 2rem;
+    }
+
+    .links {
+      display: flex;
+      gap: 1.5rem;
+      justify-content: center;
+      margin-bottom: 2rem;
+    }
+
+    .links a {
+      color: var(--blue);
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 0.9rem;
+      transition: color 0.2s;
+    }
+
+    .links a:hover {
+      color: var(--blue-light);
+    }
+
+    .nostr {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.7rem;
+      color: var(--text-muted);
+      word-break: break-all;
+      padding: 1rem;
+      background: rgba(74, 124, 155, 0.05);
+      border-radius: 8px;
+      border-left: 2px solid var(--blue);
+    }
+
+    .nostr-label {
+      display: block;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--blue);
+      margin-bottom: 0.5rem;
+    }
+
+    .npub {
+      display: block;
+      margin-bottom: 0.25rem;
+    }
+
+    .nip05 {
+      color: var(--blue);
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <img src="avatar.webp" alt="John King" class="avatar">
+    <h1>John King</h1>
+    <p class="bio">Learning as much as possible as fast as possible</p>
+    <nav class="links">
+      <a href="https://github.com/almostmachines">GitHub</a>
+      <a href="https://x.com/almost_machines">Twitter</a>
+    </nav>
+    <div class="nostr">
+      <span class="nostr-label">Nostr</span>
+      <span class="npub">npub1v8rftly89lk5p84cwlh6snjxlp6f4ydupazsewrz2fcs7dw3tmkqxg2929</span>
+      <span class="nip05">jk@almostmachines.dev</span>
+    </div>
+  </main>
+</body>
+</html>
